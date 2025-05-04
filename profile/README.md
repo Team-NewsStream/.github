@@ -1,4 +1,4 @@
-# Welcome to Project NewsStream
+# 👋 Welcome to Project NewsStream
 
 A scalable news app that:
 1. **Scrapes** news articles from external sources
@@ -6,7 +6,7 @@ A scalable news app that:
 3. **Stores** results in a managed database
 4. **Serves** processed data via Android App
 
-## Architecture
+## ⛵ Flow-chart
 ```mermaid
 ---
 config:
@@ -28,7 +28,12 @@ flowchart TB
     style F stroke:#EC4899
 ```
 
-## Core Components
+## 🤖 Architecture
+![ns-arch-dark](https://github.com/user-attachments/assets/f13b5a18-864e-4c47-916e-f759a1a6931e)
+Credit: [Eraser – AI co-pilot for technical design](https://app.eraser.io/)
+
+
+## ⚙️ Core Components
 
 ### 1. Services
 | Service           | Tech Stack      | Description                          |
@@ -45,7 +50,7 @@ flowchart TB
 - **Deployment**: Cloud Run (serverless)
 - **Scheduling**: Cloud Scheduler
 
-## Task Processing Flow
+## ⚒️ Task Processing Flow
 1. **Scheduling**  
    Cloud Scheduler hits secured `/refresh_news` endpoint hourly
 2. **Scraping**  
@@ -55,13 +60,13 @@ flowchart TB
 4. **Storage**  
    Results saved to Cloud SQL
 
-## Security
+## 🔐 Security
 - **User Authentication**: JWT based authentication to access REST endpoints for clients
 - **Internal Authentication**: IAM-bound OIDC tokens for service-to-service calls
 - **Network**: VPC Connector for private communication
 - **Secrets**: Google Secret Manager for credentials
 
-## Contributing
+## 😍 Contributing
 1. Create feature branch  
    `git checkout -b feat/awesome-feature`
 2. Commit changes  
@@ -70,7 +75,7 @@ flowchart TB
    `git push origin feat/awesome-feature`
 4. Open PR
 
-## License
+## 📄 License
 Apache 2.0
 ```
 Copyright 2024 NewsStream
